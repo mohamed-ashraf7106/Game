@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0;
+}
+body {
+  overflow: hidden;
+  position: relative;
+  background-color:skyblue;
+}
+#char {
+  position: fixed;
+  top: 400px;
+  transform: scaleX(-1);
+  height: 50px;
+  transition: 0.1s;
+  left: 10px;
+  width: 100px;
+}
+.pipe {
+  width: 150px;
+  display: flex;
+  left: 100%;
+  height: 100vh;
+  gap: 180px;
+  flex-direction: column;
+  position: fixed;
+}
+@media (max-width:767px) {
+  .pipe{
+    width: 100px;
+  }
+}
+.score {
+  position: absolute;
+  top: 10px;
+  z-index: 10000;
+  left: 10px;
+}
