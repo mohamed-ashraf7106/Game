@@ -92,9 +92,7 @@ document.addEventListener("click", () => {
 function lost() {
   let p = document.createElement("p");
   document.body.innerHTML = "";
-  p.innerHTML = `score: ${scorenum} <br>${
-    scorenum < 32 ? "good job you died before trying" : "good job"
-  }`;
+  p.innerHTML = `score: ${scorenum} <br> Good Job`;
   document.body.appendChild(p);
   let btn = document.createElement("button");
   btn.innerHTML = "again";
